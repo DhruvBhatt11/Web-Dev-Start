@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGES</title>
+    <link rel="stylesheet" href="style.css"> <!-- We link css inside of head tag -->
+</head>
+<body>
+    <img width="377" src="image.jpg" alt=" Spider-Man Blue Cover">
+    <table>
+
+        <caption>Student Detail</caption> <!-- used to name a table -->
+
+        <thead> <!-- thead is for adding header to the file it hlps us distuinguish between different sections of the table it is not necessary but it makes out=r webpage easiert to format using css-->
+            
+            <tr> <!-- tr is an attribult thar stand of table row is used as the name suggest put data in a row -->
+                <th>  Name  </th> <!-- th stands of table header and is used for usually the first row as it the the row that contains the details reguarding the data present in the table it is like a heading and makes the text big and bold-->
+                <th>  Age  </th>
+                <th>  Reg No  </th>
+            </tr>
+
+        </thead>
+        
+
+        <tbody><!-- same as the thead tbody differetiates between differetn oarts of the table-->
+
+            <tr><!-- for each row we must create its own tr tag and place all the contents inside it-->
+                <td> Rick </td> <!-- after the first row wich contain the heading we use td (tabel data) to enter the required data-->
+                <td> 20 </td>
+                <td> 001 </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"> John </td> 
+                <!--  colspan is used to make a element take up 2 or more spaces instead of the deafult 1 -->
+                <td> 002 </td>
+            </tr>
+            
+            <tr>
+            <td> Rita </td>
+            <td> 18 </td> <!-- in the same vain as colspace rowspace provides data multiple rows to present the data we need to show-->
+            <td  rowspan="2"> 003 </td>
+        </tr>
+
+        <tr>
+            <td> Joseph </td>
+            <td> 15 </td>
+            
+            
+        </tr>
+    </tbody>
+    
+    <tfoot>
+        <!--Same as above help differetiate between sections of the webpage-->
+        footer
+
+    </tfoot>
+     
+    </table>
+
+<!--  HTML LIST BEGAINS HERE -->
+
+    <ul type="circle"> <!-- ul means unorderd list. ***** We can also change the type of bullet used in the =webpage to denote the list's contant using "type" attribute--> 
+        <caption> Unorderd List Example</caption>
+        <li> ABC </li>   <!-- li is just contents of the list  -->
+        <li> PQR </li>
+        <li> XYZ </li>
+        
+    </ul>
+
+    <!-- ORDERED LIST we use ol tag-->
+     <ol type="i"><!--  We can also change the type of number or alphabet used in the =webpage to denote the list's contant using "type" attribute -->
+        <caption> Ordered List Example</caption>
+        <li> ABC </li>
+        <li> PQR </li>
+        <li> XYZ </li>
+     </ol>
+     
+     
+     <!-- there is also defination list used bu dl tag adn given defination by dd tag-->
+      <dl>
+        <caption>Defination list Example</caption>
+        <dt>Spider-man</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, velit numquam, porro vero quasi temporibus odio id recusandae, error obcaecati cumque. Aliquam natus earum beatae quidem molestias explicabo perferendis nesciunt!</dd>
+        
+        <dt>Superman</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptas nemo molestiae amet sunt quo vitae. Amet culpa quos ducimus quas harum sint?    </dd>
+      </dl>
+
+
+</body>
+</html>
