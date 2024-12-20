@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+
+    <form action="post">
+        <div> <!-- Username -->
+            <label for="username"> Username</label>
+            <input type="text" id="username" name="username" placeholder=" Enter Your Name">
+
+        </div> <!-- div is used to create a division between different elements makeing it easier to program-->
+        <div>
+            <!--  Radio  -->
+            <label for="Gender">Enter your gender</label>
+
+            <input type="radio" name="Gender" id="male" value="male">
+            <label for="male">male</label>
+
+            <input type="radio" name="Gender" id="female" value="female">
+            <label for="female">female</label>
+
+            <input type="radio" name="Gender" id="other" value="other">
+            <label for="other">other</label>
+
+        </div>
+
+        <div> <!-- checkboc -->
+            <input type="checkbox" name="cnf" id="cnf">
+            <label for="cnf" style="color:blueviolet ;">do you agree to our terms and conditions</label>
+        </div>
+
+        <div><!-- textarea tag-->
+            <label for="commonts">Enter your text</label>
+            <br> <!-- adds line break -->
+            <textarea name="Comments" id="commonts" placeholder="Enter your comments..." rows="5" cols="50"></textarea>
+        </div>
+
+    
+        <div><!-- select tag -->
+                <label for="year"> Year Of Admission</label>
+                <br>
+            <select name="year of admit" id="year"> 
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+        </div>
+
+    </form>
+</body>
+
+</html>
