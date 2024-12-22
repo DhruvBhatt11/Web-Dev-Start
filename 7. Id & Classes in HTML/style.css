@@ -1,0 +1,14 @@
+.red{    /* we use "." to target  a class in css */
+
+    color: red;
+}
+
+.bg-yellow{
+
+    background-color: yellow;
+}
+
+#seconddiv { /* we use "#" to target  an id in css */
+
+    background-color: rgb(184, 170, 197);
+}
