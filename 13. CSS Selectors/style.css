@@ -1,0 +1,54 @@
+/* Element Selector */
+        /* div {
+            color:aliceblue;
+            background-color: blueviolet;
+        } */
+        /* class selector we start by '.' */
+        .red {
+            background-color: red;
+        }
+
+        /* ID selector we start by '#' */
+        #green {
+            background-color: greenyellow;
+        }
+
+        /* Child Selectors: these are the elements inside of 'div' ,'span',etc. The may include '<h>','<p>','<a>',etc. also this only woks for direct child and wont works if it is inside of another element inside of in this case <div>*/
+
+        div>p {
+            background-color: blue;
+            color: rgb(255, 255, 255);
+
+        }
+
+        /* Decendant selector: It means the element should bt inside the parent and it doesnt matter how many elements are between them as seen in the above element. here is an eg of p inside an article insode of an div insed of an span */
+        span p {
+            background-color: pink;
+        }
+
+        div>#purple {
+            background-color: purple
+        }
+
+        /* Universal selector is depcted by '*' which as the name suggest select all elements of the entire html file */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Pseudo Selector */
+        /* What I have used below are for  achor tag  */
+        a:visited {
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: rgb(30, 210, 84);
+        }
+        

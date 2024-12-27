@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+<link rel="stylesheet" href="style.css">
+ 
+
+</head>
+
+<body>
+    
+    <div class="red"> I am a div </div>
+    <div id="green">I am another div
+        <p>This is a p inside of div</p>
+        <article>
+            <p>I am a p inside of article which is inside of div </p>
+        </article>
+    </div>
+    <p>Spiderman</p>
+
+    <span>
+        <div>
+            <article>
+                <p>This is a p inside of article inside of div inside of span </p>
+            </article>
+        </div>
+    </span>
+
+    <div>
+        <h1 id="purple"> h1 inside of div with if as purple</h1>
+    </div>
+
+    <div>
+        <p id="purple"> p inside of div with if as purple</p>
+        <!-- here this p will take css formatting frpm both the cases of formatting as it both a p inside of div and an element inside of div with id purple -->
+    </div>
+    <a href="https://www.google.com/"> Go To Google</a>
+
+
+</body>
+
+</html>
