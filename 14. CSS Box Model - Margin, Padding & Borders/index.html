@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* using universal selector */
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+
+        .box {
+            background-color: rgb(234, 127, 255);
+        }
+
+        .box1 {
+            color: red; 
+            padding: 10px;
+            /* since padding is applied inside of element, we can see bg color in that region */
+            margin: 15px;
+            /* since margin is applied outside the element, we dotn see bg color in that region */
+            border: 2px solid black;
+            width: 500px;
+            /* Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin*/
+            height: 50px;
+            /*Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin */
+            box-sizing: border-box;
+            /* It means the height and width provided should be in this case 500 and 50 after adding content boreder and padding*/
+        }
+
+        .box2 {
+            color: rgb(255, 255, 45);
+            padding: 10px;
+            /* since padding is applied inside of element, we can see bg color in that region */
+            margin: 15px;
+            /* since margin is applied outside the element, we dotn see bg color in that region */
+            border: 2px solid blue;
+            width: 500px;
+            /* Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin*/
+            height: 50px;
+            /*Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin */
+            box-sizing: border-box;
+            /* It means the height and width provided should be in this case 500 and 50 after adding content boreder and padding*/
+        }
+
+        /* .box is class selector where '.' is used tor select a class*/
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box box1"> I am a box named box1</div>
+    <!-- To add multiple classes to same element we just use a spce in between the multiple classes-->
+    <div class="box box2">I am another box name box2</div>
+</body>
+
+</html>
