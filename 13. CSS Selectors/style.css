@@ -30,6 +30,17 @@
             background-color: purple
         }
 
+    /* lets talk about first child */
+
+        .fstChld :first-child{
+            background-color: blue;
+            
+            color: red
+        }
+        .fstChld{
+            background-color: blueviolet;
+            color:thistle
+        }
         /* Universal selector is depcted by '*' which as the name suggest select all elements of the entire html file */
         * {
             margin: 0;
