@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <style>
+        /* What style would be used in our webpage is defined by its cascading effect more about that in the video and website link */
+        h1{
+            color: blue;
+        }
+        /* .yellow{
+            color: yellow;
+        } */
+        .cred{
+            color: red;
+        }                  
+        h1.cpurple{
+            /* Here since we added to elemets and made it a complex selector therefore the specificiry here will be 1(for h1) + 10 (ho class cpurple) or we can say specisifity oif thsi complex selector is 1+10 = 11 THIS IS THE REASON OF IT GETTING PICKED OVER YELLOW OR ANY OTHER STYLE FOR THAT "STUFF" */
+            color: purple;
+        }
+
+         .yellow{
+            color: yellow;  
+            /* Here we used importnat to show it is very important bypassin even the inline css */
+        }
+        /* #green{
+            color: green;
+        } */
+
+        /* Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000 */
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="green" class="yellow cred cpurple">   CSS Specificity     </h1>
+    </div>
+    <div>----------------------------------------------</div>
+    <div>
+        <a href="https://www.codewithharry.com/tutorial/css-specificity/">For more information refer to this site</a>
+        <br>
+        <a href="https://youtu.be/uTcpbPMZlFE?si=vajgppcIeSi6pMOq">For more information refer to this video</a>
+    </div> 
+    [href] is an attribute selector
+    <!-- https://www.codewithharry.com/tutorial/css-specificity/ -->
+    <!-- https://youtu.be/uTcpbPMZlFE?si=vajgppcIeSi6pMOq -->
+</body>
+</html>
