@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width:  1920px; */
+            /* height: 945px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: fuchsia;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width:  1920px; */
+            /* height: 945px; */
+            width: 80vw;
+            height: 70vh;
+            margin: 23px auto;
+            background-color: dodgerblue;
+            font-size: 16px;
+
+        }
+
+        .container p {
+            font-size: 2em;
+            font-size: 2rem;
+            /* "em* works as a multiplies to the font size this paragraph inherited from the css in last lines where we set font size as 16 pxand since em here is 2 whcih menas the size of text in the web page will be 2x16=32. so em meeams the font size will become em times the size we originally inherited */
+            /* If em and rem are used together both have same specificity so whichever one is used later will be used */
+        }
+
+        .mycont {
+            background-color: red;
+            color: yellow;
+            font-size: 23px;
+            width: 100vmin;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- What I understood is:
+px depends on resolution,
+vh vw are device specific,
+vmin and vmax depends on orientation,
+em is multiplier on current value,
+rem is a multiplier on current value in respective to the root element,
+% depends on parent -->
+
+    <!--  px, rem, em, vh, vw, % & more -->
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic et officiis similique aspernatur distinctio
+            recusandae, ullam voluptas. Ullam ut libero perspiciatis, nisi debitis doloremque animi aliquam repellendus
+            quidem. Laborum recusandae ab rerum animi voluptates atque debitis eius inventore magnam alias praesentium
+            tenetur, porro enim soluta sit numquam sunt, laudantium officiis excepturi obcaecati minima. Nulla tempore
+            excepturi repudiandae expedita quis culpa recusandae officia. Rerum modi possimus voluptatum corrupti ab a
+            officiis porro dignissimos id accusamus voluptate impedit at pariatur, provident, ducimus recusandae
+            doloribus esse tempore! Ex tenetur vero expedita distinctio dolorem quisquam ratione voluptatem earum
+            accusamus ducimus. Excepturi sint, magni quam esse enim libero est error, iusto sunt vero dolores veniam
+            eius, debitis consectetur soluta ea ut molestias. Quis, voluptates eveniet? Omnis enim, repudiandae, iste,
+            cumque quidem eius voluptatem quia nulla fugit consequatur corporis exercitationem. Expedita repellendus
+            praesentium assumenda
+        </p>
+    </div>
+    <div class="mycont">THis is another container</div>
+
+</body>
+
+</html>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
