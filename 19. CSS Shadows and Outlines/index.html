@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines </title>
+    <style>
+        .box {
+            border: 2px solid salmon;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 2px 0px 8px 2px rgb(0, 0, 0);
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+
+
+        }
+
+        /* text-shadow: h-offset v-offset blur color; */
+
+
+        .text-shadow {
+            text-shadow:  1px 5px 7px #6f975a;
+            outline: 5px solid blue;
+            border: 5px solid red;
+            border-radius: 5px;
+            /* border radius is used ito make the border a little curved */
+            outline-offset: 4px;
+            /* outline ofset sets the distance between the element and the outline*/
+            /* and since boreder har radius the outline will also have a curve due to said radius */
+            /* we coant make outline curvy without making the border curvy  */
+            /* the red one is boreder blue is outline. Outline exsist of the box scrcture modal of css and thus does not increade the soze of box model where is borede ris a opart of boix model */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Thisn is a box
+    </div>
+    <p class="text-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eius incidunt, quia, nostrum fugit reprehenderit beatae commodi, voluptas odio nisi ex accusamus quam quod ab adipisci deserunt omnis architecto! Blanditiis necessitatibus ad perferendis error ducimus, rerum ipsa dolor commodi numquam iusto ab impedit. Eos, veritatis vero!</p>
+</body>
+
+</html>
+<!-- https://youtu.be/BZJcNU648Tc?si=IcnlSZ9S0Bbb-3JW -->
+<!-- https://www.codewithharry.com/tutorial/css-shadows/ -->
