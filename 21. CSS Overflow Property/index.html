@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 100px;
+            border: 2px solid blue;
+            overflow: scroll;
+            margin: 10px;
+            padding: 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /* the last two line make the whole paragraph single line and text overflow elipsies gives the ... effect */
+        }
+        .box2{
+            width: 400px;
+            height: 100px;
+            border: 2px solid red;
+            overflow: auto;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1>Overflow: scroll </h1>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam nihil molestias! Maxime, in. Possimus iste labore aperiam aliquid impedit fugiat molestias, modi ipsam. Unde itaque quidem, amet assumenda excepturi tempore explicabo iusto! Culpa molestiae saepe aperiam non ducimus dolores repellendus doloribus itaque hic cumque eum voluptates veritatis sed tempore, nesciunt assumenda enim voluptate ut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, repellendus earum quidem iusto assumenda velit officia voluptatum, dicta nostrum placeat minus ducimus accusamus totam itaque quam provident asperiores hic. Quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iure reiciendis ex dolore quod consequatur labore officia sit sint officiis, nemo architecto velit quo recusandae perferendis veniam doloremque eaque quos numquam quis beatae iste impedit! Minus porro illum ullam, at obcaecati exercitationem?
+    </div>
+    <div class="box2">
+        <h3>Overflow: auto</h3>
+        if we use overflow auto it only uses the overflow if neede if there is no overflow overflow option is not used.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias odio, dicta tempore minima facilis dolorem nobis natus repellat, et voluptatum aut ex quibusdam, quaerat expedita. Sint quis, aut nemo, et, similique dolores dolorum maxime modi corporis tenetur quidem molestias totam. Alias, quidem at adipisci facere nesciunt deleniti tempora, possimus, ad quos dicta ex pariatur veritatis ea facilis fuga. Odio vel sapiente totam qui expedita architecto quaerat harum dolorum reprehenderit?
+    </div>
+</body>
+</html>
+<!-- https://youtu.be/ntlawluDB-c?si=FO6HuxWETuXX8H4i -->
