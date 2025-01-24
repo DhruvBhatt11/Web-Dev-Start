@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exersize</title>
+    <style>
+        div p:first-child {
+            background-color: yellow;
+            color: red;
+        }
+
+        div>p {
+            background-color: blue;
+            color: white;
+        }
+
+        /* p{
+            background-color: blue;
+            color: white; 
+        } 
+            This meathe will yeild the same result
+            */
+
+        /* .test  > p {
+              color: green;  
+        } */
+        div p:nth-child(4) {
+            /* nth child property is used in this case to format any child of div which is a <p>paragraph in this case */
+            background-color: pink;
+            color: cornflowerblue;
+
+        }
+        /* div main:nth-child(2) {
+            this line is there to test this property in other elements 
+            /* background-color: pink;
+            color: cornflowerblue;
+
+         }  */
+    </style>
+</head>
+
+<body>
+    <!-- In this exercies ewe use the first child property of css -->
+    <div>
+        <p>I am para 1 of div 1</p>
+        <p>I am para 2 of div 1</p>
+        <p>I am para 3 of div 1</p>
+        <p>I am para 4 of div 1</p>
+        
+    </div>
+
+    <div>
+        <p>I am para 1 of div 2</p>
+        <p>I am para 2 of div 2</p>
+        <p>I am para 3 of div 2</p>
+        <p>I am para 4 of div 2</p>
+    </div>
+    <!-- <div>
+        <main>asdasdasdas</main>
+        <main>asdasdasdas</main>
+        <main>asdasdasdas</main>
+        <main>asdasdasdas</main>
+    </div> -->
+
+    <!-- <div class="test">
+        <p>This is p and first child</p>
+        <a>This is a and is for testing also is the second child</a>
+        <p>This is p and is thisrd child but has a "a" in between</p>
+    </div>     -->
+
+</body>
+
+</html>
