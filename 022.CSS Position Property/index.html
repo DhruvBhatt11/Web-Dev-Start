@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            padding: 34px;
+            margin: 43px;
+            border: 2px solid red;
+        }
+        .box {
+            height: 100px;
+            width: 500px;
+            /* padding: 3px; */
+            margin: 5px;
+            border: 2px solid black;
+            
+        }
+
+        .box0{
+            background-color: black;
+            position:sticky;
+            /* used in places like nav bar  change box height to 500px  and adjust the absolute property if box1*/
+            border: 2px solid lavender;
+            top: 0px;
+            z-index: 5;
+            width: 80vw;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            background-color: aqua;
+            position: absolute;
+            top: 3px;
+            left: 0px;
+            /* giving absolute position sets the element to nearest positioned ancestors which means anthing without position as static */
+            /* transform, filtered, or prespective properties can also make an element appear as positioned adn trigger the absolute property */
+        }
+
+        .box2 {
+            background-color: yellow;
+            position: relative;
+            /* position relative let us change the position of the css elements */
+            /* by default the position is static which resists change in position */
+            bottom: 55px;
+            left: 150px;
+        }
+
+        .box3 {
+            background-color: red;
+            position: relative;
+            z-index: 1;
+            /* we use this to get the red box above yellow box as z defied position and we used the position relative cause it is needed for the z index command toi work  */
+        }
+
+        .box4 {
+            background-color: green;
+            position: fixed;
+            /* doing this even if you scroill the position remains fixed */
+            top: 250px;
+            left: 500px;
+        }
+
+      
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <nav class="box box0"></nav>
+        <div class="box box4"></div>
+        <div class="box box3"></div>
+        <div class="box box2"></div>
+        <div class="box box1"></div>
+        
+    </div>
+
+</body>
+
+</html>
+<!-- https://youtu.be/cOw6tgH6P20?si=DizNn-ZD-51gHHP3 -->
