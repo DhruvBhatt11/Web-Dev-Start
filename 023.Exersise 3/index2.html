@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .parent{
+            /* border: 2px solid black; */
+            /* outline: 2px solid black; */
+            /* display: flex; */
+
+            /* width: 500px; */
+            padding: 20px;
+            margin: 0px;
+            background-color: aliceblue;
+        }
+        .box1{
+            box-shadow: 1px 1px 3px 1px gray;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+
+
+            background-color: white;
+            position: relative;
+            left: 35px;
+
+            margin: 20px ;
+            /* padding: 20px; */
+            
+            width: 400px;
+            height: 600px;
+            /* width: 50vw; */
+            /* height: 70vh; */
+
+
+             /* outline: 1px solid gray; */
+            border-radius: 7px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* outline-offset: 4px; */
+            /* border radius is used ito make the border a little curved */
+        }
+        .image {
+            height: 255px;
+            width: 385px;
+ 
+            /* width: 30vw; */
+            /* height:20vw ; */
+            margin: 5px;
+            padding: 5px;
+            /* outline: 2px solid black; */
+            border-radius: 15px;
+            
+        }
+        .txt1{
+            position: relative;
+            bottom: 25px;
+            /* top: 20px; */
+            /* left: 55px; */
+            /* padding: 5px; */
+            margin: 10px;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+        }
+        .txt2{
+            position: relative;
+            margin: 10px;
+            /* paddig: px; */
+            top: -55px;
+            font-size: 20px;
+            color: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .p0{
+            position: relative ;
+            left: 18px;
+            top: 8px;
+            color:gray;
+            padding: 4px;
+            margin:6px;
+            outline: 1px solid grey;
+            border-radius: 18px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .readmore:hover{
+            background-color: rgb(197, 224, 255);
+        }
+        .readmore{
+
+            /* border: 1px solid rgb(34, 137, 255); */
+            display: inline;
+            padding: 15px;
+            margin: 15px;
+            position: relative;
+            bottom: 35px;
+            left: 100px;
+            color: rgb(34, 137, 255);
+            border-radius: 23px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* font-size: 18px; */
+            background-color: rgb(224, 239, 255);
+            
+
+        }
+    
+</style>
+</head>
+<body>
+    <!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
+
+<div class="box parent">
+    
+    <div class="box box1">
+        <div>
+            <img src="download.jpeg" alt="image" class="image">
+        </div>
+        <div>
+            <span class="p1 p0"> &nbsp;Nature&nbsp; </span>
+            <span class="p2 p0"> &nbsp;Lake&nbsp; </span>
+        </div>
+        <div class="txt1"><h2>Lorem Ipsum</h2></div>
+        <p class="txt2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nesciunt voluptate assumenda impedit quam maxime soluta. Sapiente quisquam voluptate quasi. </p>
+        
+        <div class="readmore">&nbsp; &nbsp; Read More &nbsp; &nbsp;</div>
+
+    </div>
+
+    
+
+</div>
+
+</body>
+</html>
