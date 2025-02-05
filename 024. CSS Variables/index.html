@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <!-- 
+We use variable to set a certain attribute to a tag like primary and secondary colors of a website and when we want to change in this case the color we can just   change the value in this case color of the variable to apply the change everywhere
+-->
+    <style>
+        /* to make a global variable we first to have to make a :root after that we define the vaiable and give it a value as given below */
+        :root {
+            --color: rgb(230, 182, 215);
+            --seccolor: rgb(224, 88, 163);
+            --defpad: 20px;
+            /* We can use variables to also hpld values like size length among others  */
+            --defop: 0.7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }    
+
+        /* div:first-child{
+            background-color: red;
+        } */
+        .nav {
+            background-color: var(--seccolor);
+            color: var(--color);
+            /* to call a variable in css we use var() and write the name of the variable inside and make the variable work that way the variable allows us to change the value once and the change is reflected all wherever it is used */
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            /* opacity: var(--defop); */
+            list-style-type: none;
+            /* padding: 15px; */
+            padding: var(--defpad);
+            border: 2px solid var(--color);
+        }
+
+        ul li:first-child {
+            --color: rgb(119, 23, 79);
+            /* we can use a local variable for a particular section of the code. If the variable has the same nake as the global var, the local variabale value takes priority since it is more specific */
+            background-color: var(--color, blue);
+            /* in this instance blue is a fallback to the variable where if the assinged variable is not used up by the webpage it will be used */
+        }
+
+        .container {
+            background-color: var(--color);
+            color: var(--seccolor);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quisquam, et ratione qui, repellendus reiciendis
+        eum ut facilis laborum possimus dolorum vitae nemo dicta? Sit a illum voluptatem molestiae doloribus vel quam
+        reiciendis earum, fugiat laboriosam ad corporis maiores facilis odit ratione sint tenetur adipisci.
+    </div>
+</body>
+
+</html>
+
+<!-- https://youtu.be/ovRU9xHfly4?si=jH4SHWD4Laq4LSJB -->
