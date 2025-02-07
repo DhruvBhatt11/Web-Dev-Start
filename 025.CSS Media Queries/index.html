@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+
+    <style>
+        body{
+            background-color: red;
+        }
+
+        @media screen and (orientation:landscape){
+            body{
+
+                border: 5px solid greenyellow;
+            }
+            /* This media quiery is helping us manipulate webpage base on our orentation*/
+        }
+
+        @media only screen and (max-width:500px){
+            body{
+
+                background-color: blue;
+            }
+        
+        
+        /* By applying the above @media command we put a condition on our web page where it will in this case show blue color till width reach 500 px but will become red color if we go above 500px */
+        
+        .boxes{
+            flex-direction: column;
+        }
+        /* this switches the the boxex to a colum-ish orentation */
+        }
+
+
+        /* @media only screen and (max-width:500px){ */
+        
+            
+            
+
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+
+        .boxes{
+            display: flex;
+        }
+
+         .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            margin: 3px;
+            padding: 3px;
+         }
+    </style>
+
+</head>
+<body>
+    <div>
+        Hey! I have red body
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+<!-- https://youtu.be/eHye3PxH4jU?si=moPiZ2NHfGYPyfnX -->
