@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            /* this helps inthe issue of overflowing image outside the box */
+        }
+        .card{
+            border: 2px solid red;
+            
+        }
+        img{
+            float: right;
+            /* float: left; */
+            
+            /* This float left allows us to add other elements on the left of the  image that can be text another image etc  */
+            /* padding: 5px;
+            margin: 5px; */
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="cards">
+        <img src="https://media.istockphoto.com/id/1948154768/vector/batsmens-brilliance-sunlit-cricket-triumph-cricket-player-hits-the-ball.webp?s=2048x2048&w=is&k=20&c=50Z50Yek1il3Yq_Pva2veJjaYx46f5HW73RIdPxm3bE=" alt="stock img" width="420px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quaerat asperiores quo fuga consequuntur itaque a quis, explicabo unde ut qui cum sit laudantium inventore, praesentium veritatis voluptate reiciendis. Quisquam aperiam dolorum tenetur eum! Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, laborum libero! Nulla hic voluptatum accusamus corrupti soluta veritatis quo illo voluptas quasi corporis provident quis cupiditate, dolor, odio necessitatibus. Nisi dolorum molestiae alias fuga rerum, distinctio sit sunt reiciendis praesentium repellendus mollitia unde voluptates assumenda corporis vero obcaecati laborum consequatur repudiandae laboriosam minus molestias optio quae cumque! Aut nesciunt dolorum quia alias reprehenderit magnam amet officia eos? Minus perspiciatis aliquid necessitatibus, voluptatem beatae officiis nemo ipsam officia veniam, reiciendis consequuntur numquam! Ipsa iste cumque cupiditate natus rerum. Laudantium fugiat asperiores quas laboriosam adipisci rerum tempore dolorum necessitatibus quo vero. Sapiente, quam magni beatae quas tempora officia deleniti esse ducimus repudiandae tenetur quaerat pariatur corporis corrupti dolore, saepe deserunt mollitia harum nisi facilis quidem eum. Blanditiis fugit alias sequi voluptatibus, corporis ullam a reiciendis beatae delectus ea accusantium officiis cumque placeat suscipit quos magnam, nam nisi hic porro aperiam perferendis deserunt, rem maxime repellendus! Consequatur molestias qui ipsa nostrum aliquid ea distinctio adipisci sint. Exercitationem sapiente illum eveniet aliquid dolorem odio maxime, hic minima itaque, obcaecati omnis officia qui! Sit nesciunt cupiditate dolor ullam ea id odit expedita blanditiis possimus dolore doloremque natus molestiae, optio veritatis ratione illo earum deserunt distinctio iure. Numquam laboriosam sit suscipit repellat necessitatibus consectetur, fugit ducimus, debitis odit praesentium voluptates placeat ipsam impedit accusamus iusto aspernatur distinctio rerum, aut amet cumque dolorum? Nisi ea cum accusamus quia obcaecati iste aperiam, vero a ducimus ullam quae molestias veniam. Repudiandae voluptatum animi qui recusandae corporis blanditiis obcaecati officia repellendus nihil labore voluptates quia sint quibusdam velit amet aspernatur ab totam consequuntur quis, doloribus quasi necessitatibus laudantium aut? Voluptates tempore saepe quam labore, dignissimos similique eum nulla facilis repellat ipsa ipsam aperiam tempora est hic modi itaque! Quis, quae doloremque dolor cupiditate perspiciatis eaque quisquam, eum aliquid accusamus unde temporibus enim dolorum sint rerum nesciunt nam expedita ea soluta excepturi qui repellat reiciendis molestias illo! Fugit minus ullam in doloremque, ab dolorem accusantium hic tempore, assumenda minima similique ipsum sed ipsa porro.</p>
+            <!-- Card 2 -->
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+
+</body>
+</html>
+
+<!-- https://youtu.be/6_UoTF7njLM?si=yW_OcsYyyHbQUaBv -->
