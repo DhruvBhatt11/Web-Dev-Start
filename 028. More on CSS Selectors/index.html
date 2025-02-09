@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{ */
+            /* background-color: aqua; */
+        /* } */
+        /* .box::first-line{ */
+            /* color: red; */
+        /* }*/
+        /* .boxes *{  */
+            /* The above lime measn i am selecting all element sinside of boxes */
+            /* color: blue; */
+            /* border: 2px solid green; */
+            /* margin: 10px; */
+            /* padding: 5px; */
+        /* } */
+        /* a,p,[data-color="primary"]{ */
+             /* Here what i did is called gruping this is used to apply same formattingt o different attributes */
+            /* it is creating another attribute attached to our element and it is here adding margin to that sepcific attribute
+             */
+             /* padding-top: 15px;
+            margin: 10px; */
+
+        /* } */
+        .box:nth-child(even){
+            background-color: pink;
+        }
+        .box:nth-child(odd){
+            background-color: turquoise;
+        }
+        .box:nth-last-child(1){
+            background-color: red;
+        }
+        
+        .boxes::before{
+            /* pseudo-element */
+            content: "This is a use of '.boxes::before{}' property  ";
+            color: green;
+        }
+        .boxes::after{
+            content: "This is a use of '.boxes::after{}' property  ";
+            color: yellow;
+        }
+        ::selection{
+            /* This is used to change the way our text/element looks when selected */
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+
+        .box::first-letter{
+            color: white;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color: rgb(183, 154, 211);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="boxes">
+        <div data-color="primary" class="box">First Box!</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <input type="text" placeholder="Type your text here">
+    </div>
+
+</body>
+</html>
+
+
+
+<!-- https://youtu.be/L8NfSewTfxY?si=h-F54JjEm4qDXf0l -->
