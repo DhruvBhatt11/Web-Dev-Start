@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+
+    <style>
+        .nav{
+            margin: 0;
+            padding: 0;
+            /* display: flex; */
+        }
+        ul {
+            /* display: flex; */
+            /* margin: 0px; */
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            border: 1px solid black;
+            background-color: rgb(132, 39, 238);
+
+        }
+
+        .el {
+
+            /* display: inline-block; */
+            padding: 15px;
+            /* margin: 1px; */
+            /* background-color: rgb(132, 39, 238); */
+            /* border: 2px solid black   ; */
+        }
+        .el:hover{
+            color: rgb(132, 39, 238);
+            background-color: black;
+            box-shadow: 1px 2px gray;
+            /* border: 1px dotted gray; */
+            cursor: pointer;
+        }
     
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul class="e">
+            <li class="el e1">Home</li>
+            <li class="el e2">About</li>
+            <li class="el e3">Contact</li>
+        </ul>
+    </div>
+
 </body>
+
 </html>
 
 <!--  Create a multicolor website which can change color using CSS Variables -->
