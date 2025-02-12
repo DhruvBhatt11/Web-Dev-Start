@@ -1,66 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E5</title>
-
     <style>
         :root {
-            --primcolor:rgb(186, 54, 219);
+            --primcolor: rgb(205, 180, 219);
+            --pc2: rgb(255, 175, 204);
+            --secolor: rgb(162, 210, 255);
         }
+
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-        *{
+
+        * {
             margin: 0;
             padding: 0;
         }
 
-        header{
-        position: sticky;
-        top: 0;
+        header {
+            position: sticky;
+            top: 0;
         }
-        ul{
-            
+
+        ul {
+
             list-style: none;
-            background-color: var(--primcolor);
-            padding: 10px;
-            
-            
-            
+            background-color: var(--pc2);
+            padding: 15px;
+
+
+
         }
-        ul li{
+
+        ul li {
             font-family: "Quicksand", serif;
-            font-weight:550;
+            font-weight: 550;
             display: inline;
             padding: 10px;
             margin: 10px;
-            
-            
+
+
         }
-        ul li:hover{
+
+        ul li:hover {
             color: white;
+            cursor: pointer;
+
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        .box1 {
+            /* display: inline-block; */
+            display: inline-flex;
+            position: static;
+            padding: 1vw;
+            margin: 3vw;
+            border: 2px solid black;
+            width: 40vw;
+            height: 80vh;
+            background-color: var(--primcolor);
+        }
+
+        .box2 {
+            /* display: inline-block; */
+            display: inline-flex;
+            position: static;
+            padding: 1vw;
+            margin: 3vw;
+            border: 2px solid black;
+            width: 40vw;
+            height: 80vh;
+            background-color: var(--primcolor);
+            overflow: scroll;
+        }
+
+        .shape {
+            border: 2px solid black;
+            margin: 1px;
+            padding: 10px;
+            text-align: center;
+            background-color: var(--secolor);
+
+        }
+
+        .logo img {
+            position: fixed;
+            width: 3vw;
+            left: 95vw;
+            bottom: 3vw;
+
+        }
+
+        .logo:hover {
             cursor: pointer;
         }
     </style>
 
 </head>
-<body>
-        <header>
-                <ul class="nav">
-                    <li>Home</li>
-                    <li>Search</li>
-                    <li>About Us</li>
-                    <li>Contact</li>
-                </ul>
-            
-        </header>
-        
-        <main>
-            
-        </main>
-        
-        <footer>
 
-        </footer>
+<body>
+    <!-- <div class="logo">
+        <img src="https://www.pngmart.com/files/23/Circle-Logo-PNG-Photo.png" alt="asd">
+    </div> -->
+    <header>
+        <ul class="nav">
+            <li>Home</li>
+            <li>Search</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+
+    </header>
+
+    <main>
+        <div class="boxes">
+            <div class="box1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur officia neque officiis sequi
+                veritatis animi numquam et id consequatur, praesentium rerum dolorum necessitatibus.
+            </div>
+            <div class="box2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam hic blanditiis libero consequuntur dicta
+                facere perspiciatis odio provident, suscipit porro quae omnis laboriosam dolorum sequi? Provident quod
+                ratione alias cumque, iste harum nihil dolorum soluta totam esse, hic, dolor nostrum fugit sed animi
+                neque culpa ipsa. Perspiciatis sint magni, maxime impedit veritatis eligendi, harum accusamus
+                repudiandae similique recusandae illum. Hic laboriosam inventore eos dolorum asperiores, ea sunt nemo
+                incidunt doloribus mollitia deserunt iusto minima eius quis dolores distinctio fugit harum consequatur
+                nam, commodi adipisci placeat? Labore hic accusamus porro nesciunt similique expedita nihil vero
+                molestiae pariatur debitis ratione a saepe tenetur fugiat eaque perferendis quisquam eligendi est aut
+                mollitia alias quidem ea, facilis libero. Voluptate ea velit quasi iusto pariatur excepturi voluptatum
+                libero impedit, quod perspiciatis quae veniam ullam perferendis? In natus odit deleniti corrupti nemo
+                magni dolore nisi veritatis et. Distinctio deserunt tempora molestias voluptatibus deleniti perferendis
+                minus nesciunt voluptatum, eaque iusto inventore eos sunt ipsa velit perspiciatis temporibus, eum sint
+                optio hic! Possimus ipsa nisi distinctio cum consequatur. Delectus ex explicabo expedita tempore
+                adipisci, vitae inventore non molestias qui, ducimus unde illum optio deserunt consequuntur ipsum? Sint
+                culpa ullam distinctio magni. Repudiandae nemo ducimus illo repellendus itaque vero eligendi ab autem.
+                Laudantium, numquam maxime in, reprehenderit dolores dolorum illo ut et nemo culpa tempora consectetur
+                unde. Alias obcaecati ex animi in, eaque sint accusantium repellendus et veniam? Autem saepe
+                necessitatibus et facere eius reiciendis, facilis fugit, animi voluptas, vel tenetur aspernatur dolor
+                delectus inventore minima veritatis iure nihil officiis culpa? Iure perferendis unde cupiditate
+                quibusdam iusto mollitia voluptate obcaecati culpa saepe ipsa ut at in distinctio id voluptatem pariatur
+                fugit quo eum consequatur labore, minus adipisci cum officiis! Dicta suscipit, modi vitae illum, iure
+                tempore explicabo sit eum possimus delectus exercitationem. Dicta autem libero dolore, consequatur qui
+                aliquid debitis eum. Ullam autem tempore vero hic repellat ipsum atque! Quos dicta fuga provident
+                inventore in? Cupiditate ipsum officiis nobis mollitia, eum reprehenderit, nemo eaque eligendi nostrum
+                adipisci illum corrupti aperiam? Quam accusamus at, corrupti ad ullam cumque blanditiis temporibus
+                error, nulla deleniti ea odit atque aspernatur commodi a dolorum fuga nihil? Magnam, deleniti blanditiis
+                repudiandae praesentium fuga autem saepe beatae velit unde amet. Repellat nobis rerum tenetur aperiam
+                blanditiis. Numquam porro quasi quibusdam esse quisquam ipsum aliquam voluptatum delectus, totam saepe
+                voluptatibus laborum quas architecto et distinctio illo ducimus minima doloremque inventore hic. Esse
+                delectus sed dicta natus, ipsum ratione laboriosam in molestias animi maiores soluta eum voluptatum
+                iusto? Dolor possimus recusandae harum, dignissimos dolores repudiandae eius ex ipsum laudantium
+                reiciendis itaque rerum, consequatur molestias ipsam reprehenderit ab eveniet temporibus doloremque in
+                hic nostrum. Optio molestias harum nisi aliquam maiores, consequatur quod rerum ducimus officia nulla,
+                doloribus corrupti delectus ut, odio dignissimos placeat! Autem tempore totam delectus suscipit?
+                Mollitia magnam sit vitae fugit non sequi maiores recusandae. Omnis nam alias quos, illum ipsa aperiam
+                cum quisquam molestiae suscipit modi! Sapiente rerum maxime dolores voluptas aliquam enim labore
+                facilis, consequuntur officia et, pariatur temporibus praesentium iste nihil iusto distinctio! Incidunt
+                exercitationem molestiae sapiente aperiam reprehenderit aut nam hic ex velit, earum veniam nisi
+                corrupti, quas sint, veritatis officia quibusdam quasi a consectetur rem debitis recusandae dolore!
+                Consectetur nisi at asperiores voluptates consequuntur, tempore facilis error eos nobis id deserunt ad
+                perferendis vitae saepe similique quam ipsa nihil. Sunt, dicta? Delectus recusandae a nesciunt ab quae
+                tenetur consectetur vel voluptatum suscipit aut facere sequi quis incidunt cupiditate obcaecati tempore
+                eos numquam harum adipisci, optio sed. Nam, impedit ratione. Iste, omnis sed possimus voluptatibus
+                obcaecati, saepe quas natus, rerum blanditiis dolores ipsa corrupti facilis officiis. Doloribus magnam
+                dolore officiis. Eos tempora facilis doloremque? Earum quasi pariatur porro corporis dolorum, at quas
+                voluptatum sit dolore, fugiat quo aut? Aspernatur quis magni alias, rerum provident distinctio ipsam
+                culpa suscipit voluptates deserunt beatae facere blanditiis quo tempore nisi inventore quisquam nostrum.
+                Ullam ab distinctio modi sint alias ratione quae asperiores aliquid blanditiis pariatur, unde molestiae
+                ea voluptatibus assumenda officiis error natus incidunt ducimus nostrum corrupti est quos et dolorem
+                maiores. Aliquam, laborum? Obcaecati aliquam necessitatibus, itaque dolores possimus dicta saepe,
+                laudantium hic sapiente voluptatum debitis minus laboriosam quo? Iste quam fuga minima, ipsum ipsa
+                laudantium quia sequi facilis cum repellendus laboriosam repudiandae provident sunt omnis?
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="shape">
+            HERE LIES FOOTER
+        </div>
+
+        
+        <div class="logo">
+            <img src="https://www.pngmart.com/files/23/Circle-Logo-PNG-Photo.png" alt="asd">
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
