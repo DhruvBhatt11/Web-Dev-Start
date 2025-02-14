@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border:2px solid rgb(255, 89, 89);
+            display: flex;
+            height: 80.5vh;
+            flex-wrap:wrap ;
+            /* justify-content: center;  */
+             /* justify content was use here to format the boxes inside in center alingment in the main axis */
+            /* align-items: center; */
+            /* aling item was use here to format the boxes inside in center alingment in the cross axis */
+            /* The main and cross axis is determined by the flex-dirextion. When flex direction is row the horizontal axis is the main axis and the vertical axis is the cross axis, whereas when flex-direction is column the main axis is the vertical axis and the horizontal axis becomes the cross axis */
+            
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column-reverse ; */
+            /* In flex box the items are not alinged from left to right or from top to bottom istead the flex justification or alingment follows the flex diresction which by default is row which alings items from left to right. We can change the direction depending on our needs withh flex-direction command as shown above */
+
+            align-content: center;
+            /* aling content is used when we want to aling multiple (more than one line)items inside of an container  and all the lines are alinges together  */
+
+        }
+        /* flexbox is used in container not the items inside of it */
+        
+        .item  {
+            height: 62px;
+            width: 62px;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 4px;
+            background-color: blueviolet;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+            
+        </div>
+    </main>
+
+</body>
+</html>
+
+
+<!-- https://youtu.be/DWk2mndNTHY?si=N3Pt4ie80eQfzv6y -->
