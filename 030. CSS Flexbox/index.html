@@ -10,7 +10,7 @@
             display: flex;
             height: 80.5vh;
             flex-wrap:wrap ;
-            /* justify-content: center;  */
+            justify-content: center; 
              /* justify content was use here to format the boxes inside in center alingment in the main axis */
             /* align-items: center; */
             /* aling item was use here to format the boxes inside in center alingment in the cross axis */
@@ -20,23 +20,63 @@
             /* flex-direction: column-reverse ; */
             /* In flex box the items are not alinged from left to right or from top to bottom istead the flex justification or alingment follows the flex diresction which by default is row which alings items from left to right. We can change the direction depending on our needs withh flex-direction command as shown above */
 
-            align-content: center;
+            /* align-content: center; */
             /* aling content is used when we want to aling multiple (more than one line)items inside of an container  and all the lines are alinges together  */
+           
+           /* gap: 30px;  */
+           /* It basically works as an margin which can be applied to all elements inside of our flexbox(container) */
+           
+           row-gap: 20px;
+           column-gap: 10px;
+           /* we can even give row gap and column gap individually */
+            /* gap: 40px 15px; */
+            /* we can even apply row and column gap within gap */
+           
 
+            /* flex-flow: Syntax: <'flex-direction'> || <'flex-wrap'>; */
+            align-items: center;
+            /* It is like aling content but different */
         }
+
+
+
         /* flexbox is used in container not the items inside of it */
         
         .item  {
+            /* flex-grow: 1; */
             height: 62px;
             width: 62px;
             border: 2px solid rgb(0, 0, 0);
-            margin: 4px;
             background-color: blueviolet;
-            color: white;
+            /* margin: 4px; */
+            
+            
+        }
+        /* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container. */
+
+
+        /* The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container. */
+
+
+        .item2{
+            /* flex-grow: 2; */
+            align-self: flex-end;
+            /* Aling self is used to aling one particular(or select grp) of element where everything else has its own editing*/
+        }
+        .item{
             display: flex;
             justify-content: center;
             align-items: center;
+            color: white;
         }
+        .order-1{
+            order:1;
+        }
+        
+        .order-2{
+            order:2;
+        }
+        /* The higher the order the later in "list queue" the item is displayed. by default the order of every element is 0 */
     </style>
 </head>
 <body>
@@ -47,6 +87,15 @@
             <div class="item">2</div>
             <div class="item">3</div>
             <div class="item">4</div>
+            <div class="item  order-1">23</div>
+            <div class="item  order-2"> 77</div>
+            <div class="item item2"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <!-- <div class="item"></div>
+            <div class="item"></div> -->
+            <!-- <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
@@ -62,6 +111,10 @@
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
+            <div class="item"></div> -->
+            <!-- <div class="item"></div>
+            <div class="item"></div> -->
+            <!-- <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
@@ -75,28 +128,15 @@
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
+            <div class="item"></div> -->
+            <!-- <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item"></div> -->
 
             
         </div>
