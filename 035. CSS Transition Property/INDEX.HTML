@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property</title>
+    <style>
+
+        .container{
+            background-color: red;
+            height: 30vh;
+            width: 40vw;
+            
+        }
+        .box{
+        background-color: aquamarine;
+        height: 5vh;
+        width: 4vw;
+        /* transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0.68, 0.24, 0.49, 1.02); ;
+            transition-delay: 1s; */
+        transition: transform 2s cubic-bezier(0.68, 0.24, 0.49, 1.02) 20ms ;
+        /* this is use dot roll all transition troperties in one */
+
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=pHI4PBFM0wY&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=45&t=78s -->
